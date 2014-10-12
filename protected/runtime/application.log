@@ -1,0 +1,384 @@
+2014/10/11 14:44:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in K:\home\localhost\www\lab2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#1 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lab2/index.php?r=user/admin
+---
+2014/10/11 14:59:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 K:\home\localhost\www\lab2\framework\web\CFormModel.php(39): ModelCode->init()
+#6 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('index')
+#13 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/lab2/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/lab2/index.php?r=gii/default/index
+---
+2014/10/11 15:13:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 K:\home\localhost\www\lab2\framework\web\CFormModel.php(39): ModelCode->init()
+#6 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('index')
+#13 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/lab2/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/lab2/index.php?r=gii/default/index
+---
+2014/10/11 15:13:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 K:\home\localhost\www\lab2\framework\web\CFormModel.php(39): ModelCode->init()
+#6 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('index')
+#13 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/lab2/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/lab2/index.php?r=gii/default/index
+---
+2014/10/11 15:13:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 K:\home\localhost\www\lab2\framework\web\CFormModel.php(39): ModelCode->init()
+#6 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 K:\home\localhost\www\lab2\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('index')
+#13 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/lab2/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/lab2/index.php?r=gii/default/index
+---
+2014/10/11 15:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in K:\home\localhost\www\lab2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lab2/index.php?r=user
+---
+2014/10/11 15:19:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000]: Syntax error or access violation: 1115 Unknown character set: 'utf-8'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 K:\home\localhost\www\lab2\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#12 K:\home\localhost\www\lab2\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#13 K:\home\localhost\www\lab2\framework\web\CBaseController.php(147): CListView->init()
+#14 K:\home\localhost\www\lab2\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 K:\home\localhost\www\lab2\protected\views\rasp\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 K:\home\localhost\www\lab2\framework\web\CBaseController.php(126): require('K:\home\localho...')
+#17 K:\home\localhost\www\lab2\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\localho...', Array, true)
+#18 K:\home\localhost\www\lab2\framework\web\CController.php(869): CBaseController->renderFile('K:\home\localho...', Array, true)
+#19 K:\home\localhost\www\lab2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#20 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(128): CController->render('index', Array)
+#21 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionIndex()
+#22 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#29 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('')
+#31 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp')
+#32 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/lab2/index.php?r=rasp
+HTTP_REFERER=http://localhost/lab2/index.php?r=gii/crud/index
+---
+2014/10/11 15:31:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Rasp))
+#7 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(136): CActiveRecord->__construct('search')
+#9 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#17 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#20 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/lab2/index.php?r=rasp/admin
+HTTP_REFERER=http://localhost/lab2/index.php?r=site/login
+---
+2014/10/11 15:31:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive.db'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Rasp))
+#7 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(136): CActiveRecord->__construct('search')
+#9 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#17 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#20 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/lab2/index.php?r=rasp/admin
+HTTP_REFERER=http://localhost/lab2/index.php?r=site/login
+---
+2014/10/11 15:31:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive.db'' in K:\home\localhost\www\lab2\framework\db\CDbConnection.php:382
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 K:\home\localhost\www\lab2\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 K:\home\localhost\www\lab2\framework\base\CModule.php(387): CDbConnection->init()
+#3 K:\home\localhost\www\lab2\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Rasp))
+#7 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(136): CActiveRecord->__construct('search')
+#9 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#10 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#17 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#20 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/lab2/index.php?r=rasp/admin
+HTTP_REFERER=http://localhost/lab2/index.php?r=site/login
+---
+2014/10/12 13:29:16 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3PI-14%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0.
+in K:\home\localhost\www\lab2\protected\views\rasp\admin.php (56)
+in K:\home\localhost\www\lab2\protected\controllers\RaspController.php (143)
+in K:\home\localhost\www\lab2\index.php (13)
+2014/10/12 13:29:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3PI-14%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0' in K:\home\localhost\www\lab2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\localhost\www\lab2\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#7 K:\home\localhost\www\lab2\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\localhost\www\lab2\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\localhost\www\lab2\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\localhost\www\lab2\protected\views\rasp\admin.php(56): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\localhost\www\lab2\framework\web\CBaseController.php(126): require('K:\home\localho...')
+#12 K:\home\localhost\www\lab2\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\localho...', Array, true)
+#13 K:\home\localhost\www\lab2\framework\web\CController.php(869): CBaseController->renderFile('K:\home\localho...', Array, true)
+#14 K:\home\localhost\www\lab2\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#15 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(143): CController->render('admin', Array)
+#16 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#17 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#24 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#27 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/lab2/index.php?Rasp%5BDay%5D=&Rasp%5BGroup%5D=3PI-14&Rasp%5BFacl%5D=&Rasp%5BSubj%5D=&Rasp_page=1&ajax=rasp-grid&r=rasp%2Fadmin
+HTTP_REFERER=http://localhost/lab2/index.php?r=rasp/admin
+---
+2014/10/12 13:30:24 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%4KI-13%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0.
+in K:\home\localhost\www\lab2\protected\views\rasp\admin.php (56)
+in K:\home\localhost\www\lab2\protected\controllers\RaspController.php (143)
+in K:\home\localhost\www\lab2\index.php (13)
+2014/10/12 13:30:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%4KI-13%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0' in K:\home\localhost\www\lab2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\localhost\www\lab2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\localhost\www\lab2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\localhost\www\lab2\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\localhost\www\lab2\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\localhost\www\lab2\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#7 K:\home\localhost\www\lab2\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\localhost\www\lab2\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\localhost\www\lab2\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\localhost\www\lab2\protected\views\rasp\admin.php(56): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\localhost\www\lab2\framework\web\CBaseController.php(126): require('K:\home\localho...')
+#12 K:\home\localhost\www\lab2\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\localho...', Array, true)
+#13 K:\home\localhost\www\lab2\framework\web\CController.php(869): CBaseController->renderFile('K:\home\localho...', Array, true)
+#14 K:\home\localhost\www\lab2\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#15 K:\home\localhost\www\lab2\protected\controllers\RaspController.php(143): CController->render('admin', Array)
+#16 K:\home\localhost\www\lab2\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#17 K:\home\localhost\www\lab2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 K:\home\localhost\www\lab2\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 K:\home\localhost\www\lab2\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 K:\home\localhost\www\lab2\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 K:\home\localhost\www\lab2\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 K:\home\localhost\www\lab2\framework\web\CController.php(291): CFilterChain->run()
+#24 K:\home\localhost\www\lab2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 K:\home\localhost\www\lab2\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#27 K:\home\localhost\www\lab2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 K:\home\localhost\www\lab2\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/lab2/index.php?Rasp%5BDay%5D=&Rasp%5BGroup%5D=4KI-13&Rasp%5BFacl%5D=&Rasp%5BSubj%5D=&Rasp_page=1&ajax=rasp-grid&r=rasp%2Fadmin
+HTTP_REFERER=http://localhost/lab2/index.php?r=rasp/admin
+---
+2014/10/12 15:58:01 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3NP-10%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0.
+in K:\home\localhost\www\lab3\protected\views\rasp\admin.php (53)
+in K:\home\localhost\www\lab3\protected\controllers\RaspController.php (143)
+in K:\home\localhost\www\lab3\index.php (13)
+2014/10/12 15:58:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3NP-10%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0' in K:\home\localhost\www\lab3\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\localhost\www\lab3\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\localhost\www\lab3\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 K:\home\localhost\www\lab3\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\localhost\www\lab3\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\localhost\www\lab3\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\localhost\www\lab3\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\localhost\www\lab3\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#7 K:\home\localhost\www\lab3\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\localhost\www\lab3\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\localhost\www\lab3\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\localhost\www\lab3\protected\views\rasp\admin.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\localhost\www\lab3\framework\web\CBaseController.php(126): require('K:\home\localho...')
+#12 K:\home\localhost\www\lab3\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\localho...', Array, true)
+#13 K:\home\localhost\www\lab3\framework\web\CController.php(869): CBaseController->renderFile('K:\home\localho...', Array, true)
+#14 K:\home\localhost\www\lab3\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#15 K:\home\localhost\www\lab3\protected\controllers\RaspController.php(143): CController->render('admin', Array)
+#16 K:\home\localhost\www\lab3\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#17 K:\home\localhost\www\lab3\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\localhost\www\lab3\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 K:\home\localhost\www\lab3\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 K:\home\localhost\www\lab3\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 K:\home\localhost\www\lab3\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 K:\home\localhost\www\lab3\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 K:\home\localhost\www\lab3\framework\web\CController.php(291): CFilterChain->run()
+#24 K:\home\localhost\www\lab3\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 K:\home\localhost\www\lab3\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 K:\home\localhost\www\lab3\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#27 K:\home\localhost\www\lab3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 K:\home\localhost\www\lab3\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/lab3/index.php?Rasp%5BDay%5D=&Rasp%5BGroup%5D=3NP-10&Rasp%5BFacl%5D=&Rasp%5BSubj%5D=&Rasp_page=1&ajax=rasp-grid&r=rasp%2Fadmin
+HTTP_REFERER=http://localhost/lab3/index.php?r=rasp/admin
+---
+2014/10/12 15:58:13 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3NP-10%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0.
+in K:\home\localhost\www\lab3\protected\views\rasp\admin.php (53)
+in K:\home\localhost\www\lab3\protected\controllers\RaspController.php (143)
+in K:\home\localhost\www\lab3\index.php (13)
+2014/10/12 15:58:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group LIKE '%3NP-10%'' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `rasp` `t` WHERE Group LIKE :ycp0' in K:\home\localhost\www\lab3\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\localhost\www\lab3\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\localhost\www\lab3\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 K:\home\localhost\www\lab3\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\localhost\www\lab3\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\localhost\www\lab3\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\localhost\www\lab3\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\localhost\www\lab3\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#7 K:\home\localhost\www\lab3\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\localhost\www\lab3\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\localhost\www\lab3\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\localhost\www\lab3\protected\views\rasp\admin.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\localhost\www\lab3\framework\web\CBaseController.php(126): require('K:\home\localho...')
+#12 K:\home\localhost\www\lab3\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\localho...', Array, true)
+#13 K:\home\localhost\www\lab3\framework\web\CController.php(869): CBaseController->renderFile('K:\home\localho...', Array, true)
+#14 K:\home\localhost\www\lab3\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#15 K:\home\localhost\www\lab3\protected\controllers\RaspController.php(143): CController->render('admin', Array)
+#16 K:\home\localhost\www\lab3\framework\web\actions\CInlineAction.php(49): RaspController->actionAdmin()
+#17 K:\home\localhost\www\lab3\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\localhost\www\lab3\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 K:\home\localhost\www\lab3\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 K:\home\localhost\www\lab3\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 K:\home\localhost\www\lab3\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 K:\home\localhost\www\lab3\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 K:\home\localhost\www\lab3\framework\web\CController.php(291): CFilterChain->run()
+#24 K:\home\localhost\www\lab3\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 K:\home\localhost\www\lab3\framework\web\CWebApplication.php(282): CController->run('admin')
+#26 K:\home\localhost\www\lab3\framework\web\CWebApplication.php(141): CWebApplication->runController('rasp/admin')
+#27 K:\home\localhost\www\lab3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 K:\home\localhost\www\lab3\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/lab3/index.php?Rasp%5BGroup%5D=3NP-10&Rasp%5BDay%5D=&Rasp%5BSubj%5D=&Rasp%5BFacl%5D=&Rasp_page=1&ajax=rasp-grid&r=rasp%2Fadmin
+HTTP_REFERER=http://localhost/lab3/index.php?r=rasp/admin
+---
